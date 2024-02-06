@@ -45,6 +45,65 @@ The implementation is done in Python, providing a straightforward demonstration 
 ## Example   
 Consider the following DFA 
 
-![Alt text](
+![Alt text](Img/1.png)
 
+Create the pairs of all the states involved in DFA and mark all the pairs (Qa,Qb) such a that Qa  is 
+Final state and Qb is Non-Final State. 
 
+![Alt text](Img/2.png)
+
+• Check for the unmarked pair Q2,Q1 
+• Check when x=0 : δ(Q2,0) = Q4 and δ(Q1,0) = Q3, check if the pair Q4,Q3 is marked and no it is not 
+marked. 
+• Check when x=1 : δ(Q2,1) = Q3 and δ(Q1,1) = Q4, check if the pair Q4,Q3 is marked and no it is not 
+marked. 
+• Hence we cannot mark the pair Q2,Q1. 
+• Check for the unmarked pair Q3,Q0 
+• Check when x=0 : δ(Q3,0) = Q5 and δ(Q0,0) = Q1, check if the pair Q5,Q1 is marked and no it is not 
+marked. 
+• Check when x=1 : δ(Q3,1) = Q5 and δ(Q0,1) = Q2, check if the pair Q5,Q2 is marked and no it is not 
+marked. 
+• Hence we cannot mark the pair Q3,Q0. 
+• Check for the unmarked pair Q4,Q0 
+• Check when x=0 : δ(Q4,0) = Q5 and δ(Q0,0) = Q1, check if the pair Q5,Q1 is marked and no it is not 
+marked. 
+• Check when x=1 : δ(Q4,1) = Q5 and δ(Q0,1) = Q2, check if the pair Q5,Q2 is marked and no it is not 
+marked. 
+• Hence we cannot mark the pair Q4,Q0. 
+• Check for the unmarked pair Q4,Q3 
+• Check when x=0 : δ(Q4,0) = Q5 and δ(Q3,0) = Q5, Such pair of state Q5,Q5 don’t exists. 
+• Check when x=1 : δ(Q4,1) = Q5 and δ(Q3,1) = Q5, Such pair of state Q5,Q5 don’t exists. 
+• Hence we cannot mark the pair Q4,Q3. 
+• Check for the unmarked pair Q5,Q1 
+• Check when x=0 : δ(Q5,0) = Q5 and δ(Q1,0) = Q3, check if the pair Q5,Q3 is marked and yes it is 
+marked. 
+• Hence we can mark the pair Q5,Q1. 
+• Check for the unmarked pair Q5,Q2 
+• Check when x=0 : δ(Q5,0) = Q5 and δ(Q1,0) = Q4, check if the pair Q5,Q4 is marked and 
+yes it is marked. 
+• Hence we can mark the pair Q5,Q2. 
+
+![Alt text](Img/3.png)
+
+• We have checked for all the unmarked pairs but don’t need to stop here we need to continue this process until 
+no more markings can be made. 
+• Check for the unmarked pair Q2,Q1 
+• Check when x=0 : δ(Q2,0) = Q4 and δ(Q1,0) = Q3, check if the pair Q4,Q3 is marked and no it is not 
+marked. 
+• Check when x=1 : δ(Q2,1) = Q3 and δ(Q1,1) = Q4, check if the pair Q4,Q3 is marked and no it is not 
+marked. 
+• Hence we cannot mark the pair Q2,Q1. 
+• Check for the unmarked pair Q3,Q0 
+• Check when x=0 : δ(Q3,0) = Q5 and δ(Q0,0) = Q1, check if the pair Q5,Q1 is marked and yes it is 
+marked. 
+• Hence we can mark the pair Q3,Q0. 
+• Check for the unmarked pair Q4,Q0 
+• Check when x=0 : δ(Q3,0) = Q5 and δ(Q0,0) = Q1, check if the pair Q5,Q1 is marked and 
+yes it is marked. 
+• Hence we can mark the pair Q4,Q0. 
+Combine all the unmarked pairs and make them as a single state in the minimized DFA. 
+• The unmarked Pairs are Q2,Q1 and Q4,Q3 hence we combine them. 
+<br>
+Following is the Minimized DFA with Q1Q2 and Q3Q4 as the combined states.
+
+![Alt text](Img/4.png)
