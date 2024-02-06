@@ -40,8 +40,11 @@ The implementation is done in Python, providing a straightforward demonstration 
 ## Features
 - Accepts DFA as input in a specified format.
 - Applies the minimization algorithm to reduce the DFA's number of states.
-- Generates a minimized DFA with equivalent behavior to the original DFA.
+- Generates a minimized DFA with equivalent behaviour to the original DFA.
 
+## Example   
+Consider the following DFA 
 
+![Alt text](
 
 
