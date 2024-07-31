@@ -85,6 +85,8 @@ Following is the Minimized DFA with Q1Q2 and Q3Q4 as the combined states.
 
 ![Alt text](Img/4.png)
 
+To know more click on the link [Myhill Nerode](https://www.youtube.com/watch?v=UiXkJUTkp44&t=15s)
+
 ## Demo
 
 Input 
